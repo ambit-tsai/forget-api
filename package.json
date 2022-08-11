@@ -19,13 +19,9 @@
         "@rollup/plugin-typescript": "^8.3.4",
         "@types/lodash-es": "^4.17.6",
         "@types/node": "^18.6.3",
-        "cache-manager": "*",
-        "class-transformer": "*",
-        "class-validator": "*",
         "lodash-es": "^4.17.21",
         "reflect-metadata": "^0.1.12",
         "rollup-plugin-terser": "^7.0.2",
-        "rxjs": "^7.1.0",
         "typescript": "^4.7.4",
         "vite": "^3.0.5"
     },
