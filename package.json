@@ -1,0 +1,41 @@
+{
+    "name": "forget-api",
+    "version": "0.0.0-alpha.1",
+    "description": "",
+    "license": "MulanPSL-2.0",
+    "author": {
+        "name": "Ambit Tsai",
+        "email": "ambit_tsai@qq.com"
+    },
+    "scripts": {
+        "build": "node scripts/build.mjs"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ambit-tsai/forget-api.git"
+    },
+    "files": [
+        "dist"
+    ],
+    "devDependencies": {
+        "@nestjs/common": "^9.0.8",
+        "@rollup/plugin-typescript": "^8.3.4",
+        "@types/lodash-es": "^4.17.6",
+        "@types/node": "^18.6.3",
+        "cache-manager": "*",
+        "class-transformer": "*",
+        "class-validator": "*",
+        "lodash-es": "^4.17.21",
+        "reflect-metadata": "^0.1.12",
+        "rollup-plugin-terser": "^7.0.2",
+        "rxjs": "^7.1.0",
+        "typescript": "^4.7.4",
+        "vite": "^3.0.5"
+    },
+    "keywords": [
+        "apiless",
+        "api-less",
+        "noapi",
+        "no-api"
+    ]
+}
