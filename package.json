@@ -1,6 +1,6 @@
 {
     "name": "forget-api",
-    "version": "0.0.0-alpha.1",
+    "version": "0.0.0-alpha.2",
     "description": "",
     "license": "MulanPSL-2.0",
     "author": {
@@ -14,9 +14,6 @@
         "type": "git",
         "url": "https://github.com/ambit-tsai/forget-api.git"
     },
-    "files": [
-        "dist"
-    ],
     "devDependencies": {
         "@nestjs/common": "^9.0.8",
         "@rollup/plugin-typescript": "^8.3.4",

@@ -12,6 +12,7 @@ import { banner } from './banner.mjs';
     exec('tsc --outDir dist --declaration --emitDeclarationOnly');
     fs.copyFile('package.json', './dist/package.json', console.warn);
     fs.copyFile('LICENSE', './dist/LICENSE', console.warn);
+    fs.copyFile('README.md', './dist/README.md', console.warn);
 
     rollup({
         input: 'src/request.ts',
