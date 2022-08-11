@@ -73,7 +73,7 @@ await userApis.getUserInfo({ id: '123' });
 // 发起请求：GET http://localhost:3000/user/123
 ```
 
-> 借助于插件的转换，前端发起请求像是直接调用控制器的方法，使用相同的方法名、参数类型、返回值类型，类似于 RPC
+> 借助于插件的转换，前端发起请求像是直接调用控制器的方法，使用相同的方法名、参数类型、返回值类型，类似于 RPC。
 
 
 ## Principle
@@ -87,8 +87,12 @@ export default createApis('/user', {
     getUserInfo: ['GET', '/:id'],
 });
 ```
-<a href="docs/request.md">forget-api/request</a> 是对 fetch 的简单封装。
+[forget-api/request](docs/request.md) 是对 fetch 的简单封装。
+
+前后端示例代码见 <a href="https://github.com/ambit-tsai/forget-api-demo" target="_blank">forget-api-demo</a>。
 
 
-## Others
-- [forget-api-demo](https://github.com/ambit-tsai/forget-api-demo)
+## TODO
+- 适配其它 Node 框架，如：Midway、Malagu、Daruk 等；
+- 通过 YApi 生成接口信息；
+- 通过 Swagger 生成接口信息；
