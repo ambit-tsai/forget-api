@@ -8,7 +8,10 @@
     config: Record<K, [Method, string]>
 ): Record<
     K,
-    <T>(data?: RequestData, options?: RequestInit) => Promise<T>
+    <T>(
+        data?: Record<string, unknown> | unknown[] | BodyInit,
+        options?: RequestInit
+    ) => Promise<T>
 >;
 
  function onBeforeRequest(callback: (options: RequestInit) => void): void;

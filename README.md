@@ -86,4 +86,4 @@ export default createApis('/user', {
     getUserInfo: ['GET', '/:id'],
 });
 ```
-<a href="docs/request.md">forget-api/request</a>是一个对 fetch 简单封装的工具。
+<a href="docs/request.md">forget-api/request</a> 是对 fetch 的简单封装。
