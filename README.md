@@ -32,7 +32,7 @@ import { defineExpose, Mark } from 'forget-api/nest';
 export class UserController {
     @Get(':id')
     getUserInfo(@Param() params: Mark<{ id: string }>) {
-        return { code: 200, data: { id } };
+        return { code: 200, data: { id: params.id } };
     }
 }
 
@@ -82,8 +82,13 @@ await userApis.getUserInfo({ id: '123' });
 ```ts
 // "@@api/user.controller"
 import { createApis } from 'forget-api/request';
+
 export default createApis('/user', {
     getUserInfo: ['GET', '/:id'],
 });
 ```
 <a href="docs/request.md">forget-api/request</a> 是对 fetch 的简单封装。
+
+
+## Others
+- [forget-api-demo](https://github.com/ambit-tsai/forget-api-demo)
